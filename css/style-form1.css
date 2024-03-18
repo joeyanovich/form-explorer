@@ -47,6 +47,7 @@ main {
   max-width: 46.875rem;
   
   padding: 0 2rem;
+  
 }
 
 header {
@@ -67,12 +68,11 @@ header .container {
   gap: 1.125rem;
 
   height: 100%;
-  width: 100%;
-  max-width: 46.875rem !important;
+  /* width: 100%; */
+  /* max-width: 46.875rem; */
+  /* max-width: 46.875rem; */
 
   margin-top: 8.75rem;
-
-  background-color: red;
 }
 
 header h1 {
@@ -247,4 +247,28 @@ footer button:hover {
 input:focus:invalid {
   outline: 0;
   border: 2px solid var(--red);
+}
+
+@media (max-width: 600px) {
+  .full-name-container{
+    flex-direction: column;
+  }
+
+  .date-time-wrapper {
+    flex-direction: column;
+
+    /* background-color: red; */
+  }
+  .date {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  .date-time-wrapper + h3 {
+    margin-top: 3rem;
+  }
+
+  .date-time .time {
+  max-width: 100%;
+  }
 }
