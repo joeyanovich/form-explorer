@@ -68,9 +68,6 @@ header .container {
   gap: 1.125rem;
 
   height: 100%;
-  /* width: 100%; */
-  /* max-width: 46.875rem; */
-  /* max-width: 46.875rem; */
 
   margin-top: 8.75rem;
 }
@@ -138,8 +135,6 @@ label span {
 }
 
 label strong {
-  /* font-weight: 400; */
-
   color: var(--red);
 }
 
@@ -183,13 +178,6 @@ input {
   gap: 0.625rem;
 }
 
-/* .date-time-wrapper .input-field .date {
-  width: 100%;
-  width: 18.75rem;
-
-  background-color: green;
-}  */
-
 .date {
   width: 100%;
   max-width: 18.75rem;
@@ -199,11 +187,6 @@ input {
 .date-time {
   width: 100%;
 }
-
-/* .date-time .input-field input {
-  width: 100%;
-  width: 8.75rem;
-} */
 
 
 .date-time .input-field {
@@ -256,8 +239,6 @@ input:focus:invalid {
 
   .date-time-wrapper {
     flex-direction: column;
-
-    /* background-color: red; */
   }
   .date {
     max-width: 100%;
