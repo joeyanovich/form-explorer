@@ -45,11 +45,14 @@ main {
 .container {
   width: 100%;
   max-width: 46.875rem;
+  
+  padding: 0 2rem;
 }
 
 header {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.125rem;
 
   width: 100%;
@@ -58,15 +61,18 @@ header {
   background-color: var(--bg-gray);
 }
 
-header div {
+header .container {
   display: flex;
   flex-direction: column;
   gap: 1.125rem;
 
   height: 100%;
+  width: 100%;
+  max-width: 46.875rem !important;
 
-  padding-top: 8.75rem;
-  margin: auto;
+  margin-top: 8.75rem;
+
+  background-color: red;
 }
 
 header h1 {
@@ -89,6 +95,7 @@ form {
   flex-direction: column;
   gap: 1.875rem;
 
+  width: 100%;
   padding: 4rem;
 
   margin-top: -7.125rem;
@@ -168,6 +175,7 @@ input {
 .date-time-wrapper {
   display: flex;
   gap: 1.375rem;
+  width: 100%;
 }
 
 .date-time {
@@ -175,12 +183,32 @@ input {
   gap: 0.625rem;
 }
 
-.date-time-wrapper .input-field .date {
+/* .date-time-wrapper .input-field .date {
+  width: 100%;
   width: 18.75rem;
-} 
 
-.date-time .input-field input {
+  background-color: green;
+}  */
+
+.date {
+  width: 100%;
+  max-width: 18.75rem;
+}
+
+
+.date-time {
+  width: 100%;
+}
+
+/* .date-time .input-field input {
+  width: 100%;
   width: 8.75rem;
+} */
+
+
+.date-time .input-field {
+  width: 100%;
+  max-width: 8.75rem;
 }
 
 footer {
@@ -188,7 +216,9 @@ footer {
   align-items: center;
   justify-content: center;
 
+  width: 100%;
   height: 10rem;
+  padding: 0 3rem;
   border-radius: 0 0 20px 20px;
 
   background-color: var(--bg-gray);
