@@ -254,10 +254,6 @@ textarea {
   outline: 2px solid black;
 }
 
-/* input[type="checkbox"] {
-  aspect-ratio: 1 / 1;
-} */
-
 .checkbox-field input {
   position: absolute;
   display: block;
@@ -310,6 +306,12 @@ textarea {
 .button-submit:hover {
   background-color: var(--button-hover);
 }
+
+input:focus:invalid  {
+  outline: 0;
+  border: 2px solid var(--red);
+}
+
 
 @media (max-width: 650px) {
   .date-time-wrapper {
